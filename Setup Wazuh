@@ -17,3 +17,5 @@ Before I install Wazuh, I will create my basic lab diagram. The tips I used to c
 
 My Basic lab diagram https://imgur.com/gtjoGmh
 
+For this project, I will use the guidance of Networkchuck to setup Wazuh. Wazuh would be the server and using Docker container in Ubuntu. I will be using two agents. Ubuntu and Windows 10 virtual Machine from Virtualbox.  
+
