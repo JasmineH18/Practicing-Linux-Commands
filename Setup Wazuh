@@ -4,11 +4,16 @@ Resources Used:
 -https://www.virtualbox.org/wiki/Downloads
 -https://ubuntu.com/#download
 -https://www.microsoft.com/en-us/software-download/windows10
--https://www.youtube.com/watch?v=3CaG2GI1kn0
+-Mydfir Create Basic Lab: https://www.youtube.com/watch?v=XR3eamn8ydQ
+-NetworkChuck: https://www.youtube.com/watch?v=3CaG2GI1kn0
 -Windows 10 installation: https://www.youtube.com/watch?v=kku0fVfksrk
 -https://wazuh.com/
 
 Environments Used:
 -Ubuntu in Virtualbox
 -Windows 10 VM in Virtualbox
+
+Before I install Wazuh, I will create my basic lab diagram. The tips I used to create the basic lab is from Mydfir video. Created the diagram using draw.io website. If something needs changing, I will update the diagram.
+
+My Basic lab diagram https://imgur.com/gtjoGmh
 
