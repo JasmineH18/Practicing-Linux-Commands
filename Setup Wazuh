@@ -6,6 +6,7 @@ Resources Used:
 -https://www.microsoft.com/en-us/software-download/windows10
 -Mydfir Create Basic Lab: https://www.youtube.com/watch?v=XR3eamn8ydQ
 -NetworkChuck: https://www.youtube.com/watch?v=3CaG2GI1kn0
+-https://www.linode.com/lp/youtube-viewers/?ifso=networkchuck&utm_source=influencer&utm_medium=video&utm_campaign=networkchuck
 -Windows 10 installation: https://www.youtube.com/watch?v=kku0fVfksrk
 -https://wazuh.com/
 
@@ -17,5 +18,11 @@ Before I install Wazuh, I will create my basic lab diagram. The tips I used to c
 
 My Basic lab diagram https://imgur.com/gtjoGmh
 
-For this project, I will use the guidance of Networkchuck to setup Wazuh. Wazuh would be the server and using Docker container in Ubuntu. I will be using two agents. Ubuntu and Windows 10 virtual Machine from Virtualbox.  
+For this project, I will use the guidance of Networkchuck to setup Wazuh. I will use Linode as my cloud hosting provider. Wazuh would be the server and using Wazuh Docker container in Ubuntu. I will be using two agents. Ubuntu and Windows 10 virtual Machine from Virtualbox.  
+
+First, I will get started with Linode, and will access it in my Ubuntu virtual machine. Networkchuck and Linode teamed up to provide Linode free for 60 days with $100 credit. Used the link Networkchuck provided and chose one of the options to sign up, and verify email. 
+
+Second step is to setup the Wazuh Docker. Made sure I'm on the Linode tab on the left. Clicked 'Create' and clicked 'Linode'. Filled out the information. 
+
+
 
