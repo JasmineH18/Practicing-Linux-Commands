@@ -8,6 +8,7 @@ Resources Used:
 -NetworkChuck: https://www.youtube.com/watch?v=3CaG2GI1kn0
 -https://www.linode.com/lp/youtube-viewers/?ifso=networkchuck&utm_source=influencer&utm_medium=video&utm_campaign=networkchuck
 -Windows 10 installation: https://www.youtube.com/watch?v=kku0fVfksrk
+-https://documentation.wazuh.com/current/deployment-options/docker/wazuh-container.html
 -https://wazuh.com/
 
 Environments Used:
@@ -22,7 +23,20 @@ For this project, I will use the guidance of Networkchuck to setup Wazuh. I will
 
 First, I will get started with Linode, and will access it in my Ubuntu virtual machine. Networkchuck and Linode teamed up to provide Linode free for 60 days with $100 credit. Used the link Networkchuck provided and chose one of the options to sign up, and verify email. 
 
-Second step is to setup the Wazuh Docker. Made sure I'm on the Linode tab on the left. Clicked 'Create' and clicked 'Linode'. Filled out the information. 
+Second step is to setup the Wazuh Docker. Made sure I'm on the Linode tab on the left. Clicked 'Create' and clicked 'Linode'. Filled out the information and click 'Create Linode'. At the top left, it will provision the Wazauh docker. It will show a green circle with the word 'Running' to let me know it'd done. Looked for SSH Access and copy the information. 
+
+Time to connect to the Wazuh docker. Opened a terminal, paste the SSH access, and hit Enter. Typed 'yes' to accept all fingerprints and type the root password I created. Updated my repositories by typing 'sudo apt update'. After the update, typed 'sudo apt install docker.io docker-compose -y' to install docker.     
+
+I will be following the instructions from the Wazuh docker deployment documentation. This will be complete in the termainal.
+
+Step 1: Clone the Wazuh repository to your system: git clone https://github.com/wazuh/wazuh-docker.git -b v4.7.2
+Typed 'ls' to make sure the directory is there. Directory named 'wazuh-docker'. Typed 'cd wazuh-docker', typed 'ls' again, and then typed 'cd single-node'. The path would look like this: root@localhost:~/wazuh-docker/single-node#
+
+Step 2: Get the desired certificates: docker-compose -f generate-indexer-certs.yml run --rm generator
+Copy and paste in the terminal. root@localhost:~/wazuh-docker/single-node# docker-compose -f generate-indexer-certs.yml run --rm generator
+
+Step 3: In the terminal, typed 'docker-compose up -d'. root@localhost:~/wazuh-docker/single-node# docker-compose up -d. Typed 'docker stats' to confirm deployment.
+
 
 
 
