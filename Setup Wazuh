@@ -37,6 +37,6 @@ Copy and paste in the terminal. root@localhost:~/wazuh-docker/single-node# docke
 
 Step 3: In the terminal, typed 'docker-compose up -d'. root@localhost:~/wazuh-docker/single-node# docker-compose up -d. Typed 'docker stats' to confirm deployment.
 
-
+To login, go back to your Linode daashboard and go to the 'Network' tab. Copied the 'Reverse DNS'. Opened a new browser tab. Typed https:// and paste the 'Reverse DNS', and hit Enter. The 'Your connection is not private' is ok to see. Clicked 'Advance' and clicked 'Proceed'. It'll show 'Wazuh The Open Source Security Platform'. Input the username/password from Wazuh docker deployment documentation. The setup would be complete once all the checkmarks are done and the page loads.    
 
 
