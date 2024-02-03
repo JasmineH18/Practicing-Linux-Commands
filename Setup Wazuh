@@ -19,7 +19,7 @@ Before I install Wazuh, I will create my basic lab diagram. The tips I used to c
 
 My Basic lab diagram https://imgur.com/gtjoGmh
 
-For this project, I will use the guidance of Networkchuck to setup Wazuh. I will use Linode as my cloud hosting provider. Wazuh would be the server and using Wazuh Docker container in Ubuntu. I will be using two agents. Ubuntu and Windows 10 virtual Machine from Virtualbox.  
+For this project, I will use the guidance of Networkchuck to setup Wazuh. I will use Linode as my cloud hosting provider. Wazuh would be the server and using Wazuh Docker container. I will be using two agents. Ubuntu and Windows 10 virtual Machine from Virtualbox.  
 
 First, I will get started with Linode, and will access it in my Ubuntu virtual machine. Networkchuck and Linode teamed up to provide Linode free for 60 days with $100 credit. Used the link Networkchuck provided and chose one of the options to sign up, and verify email. 
 
@@ -38,5 +38,23 @@ Copy and paste in the terminal. root@localhost:~/wazuh-docker/single-node# docke
 Step 3: In the terminal, typed 'docker-compose up -d'. root@localhost:~/wazuh-docker/single-node# docker-compose up -d. Typed 'docker stats' to confirm deployment.
 
 To login, go back to your Linode daashboard and go to the 'Network' tab. Copied the 'Reverse DNS'. Opened a new browser tab. Typed https:// and paste the 'Reverse DNS', and hit Enter. The 'Your connection is not private' is ok to see. Clicked 'Advance' and clicked 'Proceed'. It'll show 'Wazuh The Open Source Security Platform'. Input the username/password from Wazuh docker deployment documentation. The setup would be complete once all the checkmarks are done and the page loads.    
+
+
+Setup agents in Wazuh
+Step 1: After siging into your Wazuh account, click 'Add agent'
+Step 2: Click 'Deploy new agent'
+Step 3: Select your operating system. I added Windows and Linux. Your Wazuh server address is your Linode Reverse DNS, except for the https://. Ex: xx-xx-xxx-xxx.ip.linodeusercontent.com. Add an 'Agent name'. 
+Step 4: Copied the command to install the agent, which I did Linux first. Opened a terminal in my Ubuntu virtual machine and paste the command. Hit Enter
+Step 5: Copy/paste the command to start the agent in the Ubuntu terminal
+Step 6: Back to the Wazuh dashboard, clicked the drop down arrow at the top, and clicked 'Agents'
+
+In the 'Agents' area, my Ubuntu appears. Along with my Windows agent.
+
+
+Setup Slack alerts
+
+
+
+
 
 
