@@ -52,6 +52,18 @@ In the 'Agents' area, my Ubuntu appears. Along with my Windows agent.
 
 
 Setup Slack alerts
+Step 1: Created an Slack account and created a Workspace. You can used a regular email if needed.
+Step 2: Go to https://api.slack.com/apps
+Step 3: Clicked 'Create an app' > 'From Scratch'
+Step 4: Named the app 'Wazuh-alerts' > Selected the Workspace > Click 'Create app'
+Step 5: In the 'Basic Information', clicked 'Incoming Webhooks' > Toggle it to 'On'
+Step 6: At the bottom, click 'Add New Webhook to Workspace'
+Step 7: Selected the Channel and clicked 'Allow'
+Step 8: Copy the 'Webhook URL' and returned to the Wazuh dashboard
+Step 9: Clicked the Wazuh dropdown > 'Management' > Configuration
+Step 10: Clicked 'Edit Configuration' > Under 'Global' that is number 15, paste the Webhook URL > Clicked 'Save' > 'Restart Manager'
+Step 11: Optional, make a new line and type <rule_id>5710</rule_id> and clicked 'Save' > 'Restart Manager'
+
 
 
 
