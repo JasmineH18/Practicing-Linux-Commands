@@ -1,1 +1,22 @@
+From Wazuh, "The Wazuh File Integrity Monitoring (FIM) module monitors and alerts on changes to critical files and directories. This module helps organizations meet compliance requirements and quickly detect file changes that indicate a compromise or cyber attack."
+
+Real-time Monitoring:
+"Detect and respond to file modification in real time. Wazuh monitors system files and directories in real-time to detect changes as they occur and triggers alerts that allow you to take immediate action. This helps organizations to mitigate the impact of security incidents."
+
+Security Breach Detection:
+"Detect security breaches and system tampering using Wazuh FIM. Wazuh monitors files and directories, tracking attributes, permissions, ownership, and content. It uses hash values to detect filesystem changes, identifies malicious activities, and reduces insider threats from individuals or vendors."
+
+Regulatory Compliance:
+"Comply with regulatory compliance requirements for data security, and privacy. Wazuh helps you monitor modifications to important files and directories to comply with regulations such as PCI DSS, HIPAA, NIST 800-53, TSC, and GDPR. By using the Wazuh FIM module, you can demonstrate to auditors and regulators that you have implemented measures to maintain the security and integrity of data."
+
+Centralized Management:
+"Monitor file change activity across multiple endpoints from a central location. The Wazuh dashboard allows you to configure and manage FIM policies, analyze alerts, and perform administrative tasks. It offers comprehensive reporting on file changes, providing in-depth details of the reported modifications."
+
+Scalability:
+"Effectively monitor files and directories regardless of data volume. Wazuh distributed architecture enables scalable operation of the FIM module by distributing the workload across multiple nodes. This enables efficient management of a high volume of files and directories."
+
+Cross-platform Support:
+"Protect your critical system files on multiple operating systems with the Wazuh FIM module. The Wazuh FIM supports various operating systems including Windows, Linux, and macOS. It provides cross-platform support for monitoring file changes across your entire IT infrastructure, enabling you to protect against unauthorized changes and potential security breaches."
+
+
 
