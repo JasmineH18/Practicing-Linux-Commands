@@ -24,7 +24,22 @@ https://imgur.com/0E5cshH
 https://imgur.com/tsk22ag
 https://imgur.com/E0tj20P
 
-Windows
-I'll start with Windows 10 virtual machine in VirtualBox. With files I'm going to setup a real notification and rule set. 
+Windows/Linux
+I'll start with Windows 10 and Ubuntu virtual machine in VirtualBox. With files I'm going to setup a real notification and rule set. For this to happen, I would go into the Windows/Ubuntu host and change some configurations. After completing the below steps, Wazuh Windows and Ubuntu Intergrity Monitoring Events section will show a file was changed.
+
+Windows 10 How to: 
+Step 1: Opened a Windows Explorer > Go to C: drive > Program Files (x86) > ossec-agent > Right click 'ossec.conf' > Open with > More apps > Notepad 
+
+Step 2: Pressed CTRL + F and type 'syscheck' and press Enter > Make sure 'syscheck' is under 'File integrity monitoring' section > Typed <directories realtime="yes" report_changes="yes" check_all="yes">C:\Users\Queen\Desktop</directories>
+
+Step 3: Go to 'File' > Save
+
+Step 4: Opened a Windows Powershell as Admin > Typed 'restart-service -name wazuh'
+
+Step 5: Go to my Windows desktop and right click > New > Text Document > Rename the text document
+
+Screenshots: https://imgur.com/MoKExSM, https://imgur.com/GMu59lw, https://imgur.com/1coqnes, https://imgur.com/mU8Fzba, https://imgur.com/FNZJZnj, https://imgur.com/Qtz36ho, https://imgur.com/pAzlMug, https://imgur.com/mY533id, https://imgur.com/paCPGwW, https://imgur.com/FLXumRE
 
 
+Ubuntu Linux How to:
+Step 1:
