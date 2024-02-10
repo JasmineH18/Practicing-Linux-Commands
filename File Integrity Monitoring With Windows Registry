@@ -1,1 +1,9 @@
+File Integrity Monitoring will let you know if any Registry keys have been added, deleted, modified.
+
+Go to 'Start' > Typed and clicked 'Registry Editor' > Click the dropdown arrow for 'HKEY_LOCAL_MACHINE' > Clicked the dropdown for 'Software' > Clicked the dropdown for 'Classes' > Right click 'Classes' > 'New' > 'Key' > Named the 'Key' to 'VillainThanos' > In the 'VillainThanos', under 'Default', right click > Select 'String Value' > Named it 'IAmTheBoss' > Right clicked 'VillainThanos' > Select 'Copy Key Name'     
+
+Go to agent configuration file, go the last registry entry > Typed: <windows_registry>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VillainThanos</windows_registry>
+
+Change the frequency, since it will take 12 hours by default to find the change.
+Change the frequency from 43200 to 30 seconds > File > Save > Open Powershell as Admin > Typed restart-service -name wazuh
 
