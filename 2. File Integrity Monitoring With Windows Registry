@@ -41,9 +41,9 @@ Pressed CTRL + F and typed 'frequency' > Change the frequency from 43200 to 30 s
 Screenshots: https://imgur.com/NYPGF1U, https://imgur.com/utZxMqa, https://imgur.com/tfi9WF8
 
 
+Go back to Wazuh dashboard, in my Windows Integrity Monitoring. Clicked the 'Inventory' tab and clicked 'Windows Registry'. Searched for the registry key I created. Searched for 'VillainThanos'. Wazuh will check the registry key and monitor it.
+Screenshots: https://imgur.com/uatbkMx, 
 
-
-
-
-
+Go to 'Events' tab and it'll check for changes every 30 seconds. Went back to the 'VillainThanos' registry key and edit the default string data to 'Where's the Avengers?'. 
+Screenshots: https://imgur.com/W0Fdlh3, https://imgur.com/iPlOJYA, https://imgur.com/YAjKizc
 
