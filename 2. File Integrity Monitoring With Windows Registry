@@ -32,10 +32,18 @@ Screenshots: https://imgur.com/0UCxYA6, https://imgur.com/lIQVqJu
 In 'VillainThanos', under 'Default', right click > Select 'String Value' > Named it 'IAmTheBoss' > Right clicked 'VillainThanos' > Select 'Copy Key Name'     
 Screenshots: https://imgur.com/O3HoSvb, https://imgur.com/SbvHdN2
 
-Go to agent configuration file, Windows Explorer > Go to C: drive > Program Files (x86) > ossec-agent > Right click 'ossec.conf' > Open with > More apps > Notepad > go the last registry entry > Typed: <windows_registry>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VillainThanos</windows_registry>
-Screenshot: https://imgur.com/MoKExSM, https://imgur.com/GMu59lw, https://imgur.com/1coqnes, https://imgur.com/mU8Fzba, 
+Go to agent configuration file, Windows Explorer > Go to C: drive > Program Files (x86) > ossec-agent > Right click 'ossec.conf' > Open with > More apps > Notepad > Pressesd CTRL + F and typed Windows registry > Go the last registry entry before 'Windows registry entries to ignore' > Typed: <windows_registry>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\VillainThanos</windows_registry>
+Screenshot: https://imgur.com/MoKExSM, https://imgur.com/GMu59lw, https://imgur.com/1coqnes, https://imgur.com/mU8Fzba, https://imgur.com/meUcZYk, https://imgur.com/wZD6Pnk
 
 
 Change the frequency, since it will take 12 hours by default to find the change.
-Change the frequency from 43200 to 30 seconds > File > Save > Open Powershell as Admin > Typed restart-service -name wazuh
+Pressed CTRL + F and typed 'frequency' > Change the frequency from 43200 to 30 seconds > File > Save > Open Powershell as Admin > Typed restart-service -name wazuh > Press Enter
+Screenshots: https://imgur.com/NYPGF1U, https://imgur.com/utZxMqa, https://imgur.com/tfi9WF8
+
+
+
+
+
+
+
 
