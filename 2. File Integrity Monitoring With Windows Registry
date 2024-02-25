@@ -18,6 +18,16 @@ Scalability:
 Cross-platform Support:
 "Protect your critical system files on multiple operating systems with the Wazuh FIM module. The Wazuh FIM supports various operating systems including Windows, Linux, and macOS. It provides cross-platform support for monitoring file changes across your entire IT infrastructure, enabling you to protect against unauthorized changes and potential security breaches."
 
+Resources Used:
+-https://www.virtualbox.org/wiki/Downloads
+-https://www.microsoft.com/en-us/software-download/windows10
+-NetworkChuck: https://www.youtube.com/watch?v=3CaG2GI1kn0
+-https://www.linode.com/docs/
+-Windows 10 installation: https://www.youtube.com/watch?v=kku0fVfksrk
+
+Environments Used:
+-Windows 10 VM in Virtualbox
+
 I can access my FIM (File Integrity Monitoring) from my Wazuh dashboard. Click the dropdown arrow > 'Agents' > Go to 'Agents' session and select of of the machines > Select 'Integrity monitoring' at the top. Inventory, Dashboard, and Events should appear. File Integrity Monitoring will monitor my important files and registry keys, and if anything is being modified.
 https://imgur.com/URGwolL
 https://imgur.com/0E5cshH
