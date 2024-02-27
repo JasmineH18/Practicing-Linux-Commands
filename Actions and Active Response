@@ -1,6 +1,6 @@
 Actions/Active response: Wazuh Actions and Active Response are features within the Wazuh platform that allow organizations to automate responses to security incidents. Actions are predefined responses that can be triggered based on specific security events detected by Wazuh, such as blocking an IP address or isolating a compromised system. Active Response, on the other hand, enables organizations to create custom response actions based on their unique security requirements. These features help organizations to respond quickly and effectively to security incidents, reducing the impact of potential threats.
 
-The active response module helps to meet the following PCI DSS requirement:
+The active response module helps to meet the following Regulatory Compliance: PCI DSS requirement:
 
 Requirement 11 - Test Security of Systems and Networks Regularly: Vulnerabilities are being discovered continually by malicious individuals and researchers, and being introduced by new software. System components, processes, and bespoke and custom software should be tested frequently to ensure security controls continue to reflect a changing environment.
 
