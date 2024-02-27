@@ -1,3 +1,5 @@
+Security Information Management: Integrity Monitoring
+
 From Wazuh, "The Wazuh File Integrity Monitoring (FIM) module monitors and alerts on changes to critical files and directories. This module helps organizations meet compliance requirements and quickly detect file changes that indicate a compromise or cyber attack."
 
 Real-time Monitoring:
