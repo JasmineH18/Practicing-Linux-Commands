@@ -1,0 +1,55 @@
+Integration with external APIs
+The Integrator daemon allows Wazuh to connect to external APIs and alerting tools such as Slack, PagerDuty, VirusTotal, Shuffle, and Maltiverse.
+
+Resources Used:
+-https://www.virtualbox.org/wiki/Downloads
+-https://ubuntu.com/#download
+-https://slack.com/
+-NetworkChuck: https://www.youtube.com/watch?v=3CaG2GI1kn0
+-https://documentation.wazuh.com/current/user-manual/manager/manual-integration.html
+
+Environments Used:
+-Ubuntu in Virtualbox
+
+Setup Slack alerts
+Created an Slack account and created a Workspace. You can used a regular email if needed.
+Step 1: Go to https://api.slack.com/apps
+Step 2: Clicked 'Create an app' > 'From Scratch'
+Step 3: Named the app 'Wazuh-alerts' > Selected the Workspace > Click 'Create app'
+Step 4: In the 'Basic Information', clicked 'Incoming Webhooks' > Toggle it to 'On'
+Step 5: At the bottom, click 'Add New Webhook to Workspace'
+Step 6: Selected the Channel and clicked 'Allow'
+Step 7: Copy the 'Webhook URL' and returned to the Wazuh dashboard
+Step 8: Clicked the Wazuh dropdown > 'Management' > Configuration
+Step 9: Clicked 'Edit Configuration' > Pressed CTRL + F, typed (</global>). 
+
+Step 10: Under (</global>), copied and pasted the integration configuration from Wazuh user manual. You would add your Slack Webhook URL in (<hook_url> </hook_url>)
+
+<integration>
+  <name>slack</name>
+  <hook_url> </hook_url> <!-- Required for Slack, Shuffle, and Maltiverse -->
+  <alert_format>json</alert_format>
+<integration>
+
+Below are optional filters you can, and I will add the rule_id to the integration configuration. Used the Host authentication fail rule.id: 2501.
+
+<!-- Optional filters -->
+  <rule_id> </rule_id>
+  <level> </level>
+  <group> </group>
+  <event_location> </event_location>
+  <options> </options>
+
+My final integration configuration.
+
+<integration>
+  <name>slack</name>
+  <hook_url> </hook_url> <!-- Required for Slack, Shuffle, and Maltiverse -->
+  <alert_format>json</alert_format>
+  <rule_id>2501</rule_id>
+<integration>
+
+Step 11: Clicked 'Save' > 'Restart Manager'
+
+
+
