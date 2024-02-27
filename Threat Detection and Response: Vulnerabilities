@@ -1,0 +1,21 @@
+The Wazuh vulnerabilities feature is a component of the Wazuh platform that helps users identify and address security vulnerabilities within their systems. This feature leverages vulnerability databases and scanning tools to detect known vulnerabilities in software, operating systems, and other components of the IT infrastructure. By using the vulnerabilities feature in Wazuh, users can proactively identify and remediate security weaknesses before they can be exploited by attackers. It is an essential tool for maintaining the security of your environment and protecting against potential threats. By default it's not enabled. 
+
+You would access Wazuh vulnerabilities feature by clicking the Wazuh dropdown > 'Modules' > 'Vulnerabilities'. Screenshot: https://imgur.com/ZjtO6fR
+
+Enable Wazuh vulnerabilities feature:
+In the Wazuh dashboard, clicked the Wazuh dropdown arrow > 'Management' > 'Configuration' > 'Edit configuration' > Pressed CTRL + F, and typed 'vulnerability-detector'   
+
+In <enabled>no<enabled>, change the 'no' to 'yes'.
+Result: <enabled>yes<enabled>
+Clicked 'Save' > 'Restart Manager'
+
+Screenshots: https://imgur.com/Uf1MdkF, https://imgur.com/WFEf73k, https://imgur.com/Arm8i1u
+
+Returned to Wazuh vulnerabilities. It did not detect any vulnerabilities on my Ubuntu machine.
+
+Screenshots: https://imgur.com/NphS8TG, https://imgur.com/HCXdvET
+
+
+
+
+
