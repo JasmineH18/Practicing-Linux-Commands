@@ -11,6 +11,8 @@ Resources Used:
 Environments Used:
 -Ubuntu in Virtualbox
 
+Screenshots: https://imgur.com/rDWawzd, https://imgur.com/D1u800V, https://imgur.com/zv2fmnN
+
 Setup Slack alerts
 Created an Slack account and created a Workspace. You can used a regular email if needed.
 Step 1: Go to https://api.slack.com/apps
@@ -23,7 +25,7 @@ Step 7: Copy the 'Webhook URL' and returned to the Wazuh dashboard
 Step 8: Clicked the Wazuh dropdown > 'Management' > Configuration
 Step 9: Clicked 'Edit Configuration' > Pressed CTRL + F, typed (</global>). 
 
-Step 10: Under (</global>), copied and pasted the integration configuration from Wazuh user manual. You would add your Slack Webhook URL in (<hook_url> </hook_url>)
+Step 10: Under (</global>), copied and pasted the integration configuration from Wazuh user manual. You would add your Slack Webhook URL in (<hook_url> </hook_url>).
 
 <integration>
   <name>slack</name>
@@ -50,6 +52,21 @@ My final integration configuration.
 <integration>
 
 Step 11: Clicked 'Save' > 'Restart Manager'
+
+
+Tested to see if it'll send me the alert in Slack. In my Ubuntu virtual machine, I incorrectly type the password twice. Screenshot: https://imgur.com/RsK3Dcw
+
+Results: 
+WAZUH Alert
+syslog: User authentication failure.
+Feb 27 18:30:35 Ubuntu gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=queen
+Agent
+(001) - Ubuntu
+Location
+/var/log/auth.log
+Rule ID
+2501 (Level 5)
+Today at 6:30 PM
 
 
 
