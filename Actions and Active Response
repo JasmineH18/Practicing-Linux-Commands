@@ -4,13 +4,56 @@ The active response module helps to meet the following PCI DSS requirement:
 
 Requirement 11 - Test Security of Systems and Networks Regularly: Vulnerabilities are being discovered continually by malicious individuals and researchers, and being introduced by new software. System components, processes, and bespoke and custom software should be tested frequently to ensure security controls continue to reflect a changing environment.
 
+Resources Used:
+-https://www.virtualbox.org/wiki/Downloads
+-https://ubuntu.com/#download
+-https://www.kali.org/get-kali/#kali-platforms
+-NetworkChuck: https://www.youtube.com/watch?v=3CaG2GI1kn0
+-https://www.linode.com/lp/youtube-viewers/?ifso=networkchuck&utm_source=influencer&utm_medium=video&utm_campaign=networkchuck
+-https://documentation.wazuh.com/current/user-manual/index.html
+
+Environments Used:
+-Ubuntu in Virtualbox
+
+Action Example: Authentication failed
+Started my Ubuntu machine > Typed the wrong password twice 
+
+Results: 
+Looked at my Wazuh dashboard > Clicked the Wazuh dropdown > 'Agents' > In the 'Agents' section, selected my Ubuntu machine > Clicked 'Security Events' > 'Events'. Screenshots: https://imgur.com/BdNmc9c, https://imgur.com/qwmKEXv, https://imgur.com/HxDytlz, https://imgur.com/rRVmDM4
+
+The 'Events' showed my Ubuntu machine there was a 'authentication failure' twice with the date an time. Also show the rule.
+
+rule:description: 
+syslog: User authentication failure.
+Screenshot: https://imgur.com/Tovdreb
 
 
+I will be configuring active response in my Ubuntu Virtual machine.
 
+Example: 
+Clicked Wazuh dropdown > 'Management' > 'Configuration' > 'Edit configuration' > Pressed CTRL + F > Typed 'Active response' > Scroll down until you see: (<!--  <active-response>)
 
+Screenshots: https://imgur.com/vCpuW0z, https://imgur.com/Y1VTLGj, https://imgur.com/djXqLaF, https://imgur.com/5CKZCSZ
 
+Added an <active-response> block under the (<!--  <active-response>) From Wazuh User manual. https://documentation.wazuh.com/current/user-manual/capabilities/active-response/ar-use-cases/blocking-ssh-brute-force.html
 
+<active-response>
+    <command>firewall-drop</command>
+    <location>local</location>
+    <rules_id>5763</rules_id>
+    <timeout>180</timeout>
+  </active-response>
 
+Open Wazuh Agents in a new tab > Navigated to Ubuntu Security Events > Took note of the 'authentication failure' rule.id number. rule.id number is 2501. 
 
+In the <active-response> block, changed the <rule_id> to 2501. The timeout is how many second for the firewall to hold. So it'll block the brute force for 180 seconds. Clicked 'Save' >  'Restart Manager'
+
+Screenshot: https://imgur.com/PiF0aNx
+
+Attempted to brute force the Ubuntu machine by guessing the password twice. Returned to Wazuh Ubuntu agent Security Events. It shows the firewall blocked the host.
+
+rule.description
+Host Blocked by firewall-drop Active Response 
+Screenshot: https://imgur.com/HuD5udP
 
 
