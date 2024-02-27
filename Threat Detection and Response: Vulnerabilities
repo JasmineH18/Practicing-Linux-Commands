@@ -1,5 +1,14 @@
 The Wazuh vulnerabilities feature is a component of the Wazuh platform that helps users identify and address security vulnerabilities within their systems. This feature leverages vulnerability databases and scanning tools to detect known vulnerabilities in software, operating systems, and other components of the IT infrastructure. By using the vulnerabilities feature in Wazuh, users can proactively identify and remediate security weaknesses before they can be exploited by attackers. It is an essential tool for maintaining the security of your environment and protecting against potential threats. By default it's not enabled. 
 
+Resources Used:
+-https://www.virtualbox.org/wiki/Downloads
+-https://ubuntu.com/#download
+-NetworkChuck: https://www.youtube.com/watch?v=3CaG2GI1kn0
+-https://documentation.wazuh.com/current/user-manual/index.html
+
+Environments Used:
+-Ubuntu in Virtualbox
+
 You would access Wazuh vulnerabilities feature by clicking the Wazuh dropdown > 'Modules' > 'Vulnerabilities'. Screenshot: https://imgur.com/ZjtO6fR
 
 Enable Wazuh vulnerabilities feature:
