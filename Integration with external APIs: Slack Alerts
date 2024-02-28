@@ -25,7 +25,7 @@ Step 7: Copy the 'Webhook URL' and returned to the Wazuh dashboard
 Step 8: Clicked the Wazuh dropdown > 'Management' > Configuration
 Step 9: Clicked 'Edit Configuration' > Pressed CTRL + F, typed (</global>). 
 
-Step 10: Under (</global>), copied and pasted the integration configuration from Wazuh user manual. You would add your Slack Webhook URL in (<hook_url> </hook_url>).
+Step 10: Under (</global>), copied and pasted the integration configuration from Wazuh user manual. You would add your Slack Webhook URL in (<hook_url> </hook_url>). You can use api key: (<api_key> </api_key> <!-- Required for PagerDuty, VirusTotal, and Maltiverse -->)
 
 <integration>
   <name>slack</name>
