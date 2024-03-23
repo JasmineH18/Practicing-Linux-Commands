@@ -1,0 +1,38 @@
+Wazuh Regulatory Compliance refers to the capability of the Wazuh platform to assist organizations in meeting the requirements set forth by various regulatory standards and frameworks. By providing predefined rules, checks, and reports aligned with regulations such as GDPR, PCI DSS, HIPAA, and more, Wazuh helps organizations ensure that their security measures adhere to specific compliance mandates. This feature enables organizations to streamline compliance efforts, demonstrate adherence to regulatory requirements, and enhance their overall security posture. Wazuh Regulatory Compliance serves as a valuable tool for organizations striving to maintain regulatory compliance and protect sensitive data from potential breaches and non-compliance penalties.
+
+There is 5 of the Regulatory Compliance. PCI DSS, GDPR, HIPAA, NIST 800-53, and TSC.
+
+PCI DSS (Payment Card Industry Data Security Standard):
+-A set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment.
+-Focuses on protecting cardholder data, building and maintaining secure networks, implementing strong access control measures, regularly monitoring and testing networks, and maintaining an information security policy.
+
+GDPR (General Data Protection Regulation):
+-Legislation enacted by the European Union to protect the personal data and privacy of individuals within the EU and the European Economic Area.
+-Imposes strict requirements on how organizations collect, process, store, and protect personal data, with significant penalties for non-compliance.
+
+HIPAA (Health Insurance Portability and Accountability Act):
+-Legislation in the United States that sets standards for the protection of sensitive patient health information.
+-Requires healthcare providers, insurers, and their business associates to implement safeguards to ensure the confidentiality, integrity, and availability of protected health information.
+
+NIST 800-53 (National Institute of Standards and Technology Special Publication 800-53):
+-A framework that provides a comprehensive set of security controls for federal information systems and organizations.
+-Organized into families of controls covering various aspects of information security, such as access control, incident response, and system and communications protection.
+
+TSC (Threat Sharing Consortium):
+-A collaborative effort among organizations to share threat intelligence and cybersecurity information to enhance collective security defenses.
+-Facilitates the exchange of threat indicators, best practices, and insights to improve cyber resilience and response capabilities.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
