@@ -1,1 +1,39 @@
+Security Information Management (SIM) is a comprehensive approach to managing security-related data within an organization. It involves collecting, analyzing, and correlating security data from various sources to provide a holistic view of an organization's security posture. SIM solutions typically aggregate data from security devices, systems, and applications to identify security incidents, monitor compliance with security policies, and detect potential threats.
+
+Key aspects of Security Information Management include:
+
+- Collecting and centralizing security data from diverse sources such as firewalls, intrusion detection systems, antivirus software, and log files.
+- Analyzing and correlating security events to identify patterns, anomalies, and potential security incidents.
+- Providing real-time monitoring and alerting capabilities to respond to security threats promptly.
+- Generating reports and dashboards to provide insights into security events, compliance status, and overall security performance.
+- Facilitating incident response and forensic investigations by providing a centralized repository of security data.
+
+Overall, Security Information Management plays a crucial role in enhancing an organization's security posture by enabling proactive threat detection, incident response, and compliance management.
+
+
+In Wazuh, there is two main features in Security Information Management. Security Events and Integrity Monitoring.
+
+Wazuh Security Events encompass a wide range of activities and incidents that occur within an organization's network, systems, and applications. These events include unauthorized access attempts, malware infections, system misconfigurations, and other security-related incidents. By monitoring and analyzing these events in real-time, Wazuh helps organizations detect and respond to potential threats effectively. The platform generates alerts based on predefined rules and behavioral analysis, enabling security teams to investigate and mitigate security incidents promptly.
+
+Wazuh integrity monitoring is a crucial feature that focuses on ensuring the consistency and security of critical system files and configurations. By regularly scanning and comparing file attributes, permissions, and content against baselines, Wazuh can detect unauthorized changes or tampering. This proactive approach helps organizations maintain the integrity of their systems and promptly identify any unauthorized modifications that could indicate a security breach. Integrity monitoring plays a key role in bolstering overall security and compliance efforts within an organization's IT environment.
+
+Security Events
+My Linux agent:
+In Wazuh, it shows 12 authentication failure, specifically 'syslog: User authentication failure'
+
+Dashboard Screenshots: https://imgur.com/sbGyfFT, https://imgur.com/IiPQpoR
+Events Screenshots: https://imgur.com/RvG19ND, https://imgur.com/8IsrlIS
+
+My Windows agent:
+
+
+Integrity Monitoring
+My Linux agent:
+Wazuh will scan eveything on the Linux machine and show the files it has. It picked up 4915 files in my Linux machine.
+
+Inventory Screenshot https://imgur.com/CmA49rg
+
+My Windows agent:
+
+
 
