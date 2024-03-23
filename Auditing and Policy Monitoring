@@ -9,9 +9,14 @@ Wazuh system auditing involves the continuous monitoring and analysis of system 
 Wazuh's Security Configuration Assessment feature focuses on evaluating and analyzing the security settings, configurations, and controls within an organization's IT environment to pinpoint potential vulnerabilities and security gaps. Through comprehensive assessments of systems, devices, and applications, Wazuh can identify weaknesses that may be exploited by threat actors. By ensuring that security configurations adhere to industry best practices, compliance standards, and internal security policies, Wazuh helps organizations bolster their overall security posture. The Security Configuration Assessment functionality plays a crucial role in proactively strengthening defenses, minimizing the risk of cyber attacks, and safeguarding critical assets and information from unauthorized access or compromise.
 
 
+Policy Monitoring
+My Linux agent
+Dashboard Screenshot: https://imgur.com/FswNwAC
+Events Screenshots: https://imgur.com/HEVYfZW, https://imgur.com/0sDIRWZ
 
-
-
-
+Security configuration assessment
+My Linux agent
+Inventory Screenshot: https://imgur.com/2SQtZoc
+Events: https://imgur.com/9Bn3tP1
 
 
