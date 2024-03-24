@@ -17,6 +17,7 @@ Wazuh Security Events encompass a wide range of activities and incidents that oc
 
 Wazuh integrity monitoring is a crucial feature that focuses on ensuring the consistency and security of critical system files and configurations. By regularly scanning and comparing file attributes, permissions, and content against baselines, Wazuh can detect unauthorized changes or tampering. This proactive approach helps organizations maintain the integrity of their systems and promptly identify any unauthorized modifications that could indicate a security breach. Integrity monitoring plays a key role in bolstering overall security and compliance efforts within an organization's IT environment.
 
+
 Security Events
 My Linux agent:
 In Wazuh, it shows 12 authentication failure, specifically 'syslog: User authentication failure'
@@ -25,15 +26,24 @@ Dashboard Screenshots: https://imgur.com/sbGyfFT, https://imgur.com/IiPQpoR
 Events Screenshots: https://imgur.com/RvG19ND, https://imgur.com/8IsrlIS
 
 My Windows agent:
+Dashboard Screenshots: https://imgur.com/7j4GcoX, https://imgur.com/ezyVWpa
+Events Screenshot: https://imgur.com/r9fMaqT
 
 
 Integrity Monitoring
-My Linux agent:
+My Linux agent
 Wazuh will scan eveything on the Linux machine and show the files it has. It picked up 4915 files in my Linux machine.
 
-Inventory Screenshot https://imgur.com/CmA49rg
+Inventory Screenshot: https://imgur.com/CmA49rg
 
-My Windows agent:
+My Windows agent
+Inventory Screenshot: https://imgur.com/ahI6R2s
+Dashboard Screenshot: https://imgur.com/osXibE4
+Events Screenshot: https://imgur.com/NWQcVLg
+
+
+
+
 
 
 
